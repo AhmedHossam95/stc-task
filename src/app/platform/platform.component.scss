@@ -1,0 +1,163 @@
+::ng-deep .mat-card-header-text {
+    margin: 0px !important;
+}
+
+.edit-btn {
+    color: var(--primary);
+    background-color: var(--light);
+
+    mat-icon {
+        font-size: 18px;
+        height: fit-content;
+    }
+}
+
+
+
+
+
+.imgs-list {
+    width: fit-content;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-inline-start: -10px;
+        object-fit: cover;
+    }
+}
+
+.members-count {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-inline-start: -10px;
+    background-color: var(--light);
+    color: var(--silver);
+    border: 1px solid var(--light);
+}
+
+.search-input {
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.search-form-field {
+    padding-inline-end: 32px;
+    height: fit-content;
+
+    ::ng-deep .mat-form-field-outline {
+        background-color: var(--light) !important;
+    }
+
+    ::ng-deep .mat-form-field-infix {
+        padding: 10px !important;
+    }
+
+    ::ng-deep .mat-form-field-wrapper {
+        padding: 0 !important;
+    }
+
+    mat-icon {
+        margin-right: 0px !important;
+        vertical-align: middle;
+    }
+}
+
+
+
+.tabs {
+    gap: 16px;
+    min-width: 400px;
+    margin-inline-end: 16px;
+    color: var(--dark);
+    border-bottom: unset;
+}
+
+.main-card {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: fit-content;
+
+    mat-card-content {
+
+        button {
+            // color: var(--white);
+            font-size: 12px;
+            height: 40px;
+
+            mat-icon {
+                font-size: 15px;
+                width: 10px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.add-member {
+    color: var(--white);
+    margin-inline-end: 16px;
+    padding-inline-end: 55px;
+}
+
+.selected-tab {
+    background-color: var(--light);
+    border-radius: 5px;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background-color: var(--primary);
+    }
+}
+
+mat-card {
+
+    mat-form-field {
+        width: 100%;
+
+        ::ng-deep .mat-form-field-infix {
+            display: flex;
+            align-items: center;
+        }
+
+        ::ng-deep .mat-select-value {
+            color: var(--primary);
+        }
+    }
+
+
+
+}
+
+.square {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+}
+
+mat-expansion-panel {
+    background-color: var(--light);
+    width: 100%;
+
+    p {
+        margin: 0 !important;
+    }
+
+}
+
+.workspace:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+
+    p {
+        color: var(--white);
+    }
+}

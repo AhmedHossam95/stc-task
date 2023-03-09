@@ -1,1 +1,126 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-success {
+    color: var(--success);
+}
+
+.mat-silver {
+    color: var(--silver);
+}
+
+.mat-light {
+    color: var(--light);
+}
+
+.mat-dark {
+    color: var(--dark);
+}
+
+.mat-yellow {
+    color: var(--yellow);
+}
+
+.mat-warning {
+    color: var (--warning);
+}
+
+.mat-danger {
+    color: var (--danger);
+}
+
+.mat-cyan {
+    color: var(--cyan);
+}
+
+.mat-primary {
+    color: var(--primary);
+}
+
+.mat-secondary {
+    color: var(--secondary);
+}
+
+.width-fit {
+    width: fit-content;
+}
+
+.height-fit {
+    height: fit-content;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.margin-inline-start-32 {
+    margin-inline-start: 32px !important;
+}
+
+.padding-inline-end {
+    padding-inline-end: 10px;
+}
+
+.padding-inline-start {
+    padding-inline-start: 10px;
+}
+
+.fit-content {
+    height: fit-content;
+    width: fit-content;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.margin-vertical {
+    margin-block: 16px;
+}
+
+.margin-horizontal {
+    margin-inline: 16px;
+}
+
+.padding-vertical {
+    padding-block: 16px;
+}
+
+.padding-horizontal {
+    padding-inline: 16px;
+}
+
+.tab-content {
+    background-color: var(--secondary);
+    width: 100px;
+    height: 100px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+mat-expansion-panel {
+    width: 300px;
+
+    .mat-expansion-panel-header {
+        padding-inline: 16px;
+    }
+}
+
+.big-square {
+    width: 100%;
+    height: 600px;
+    overflow: scroll;
+}

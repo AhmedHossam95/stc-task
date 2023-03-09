@@ -1,0 +1,49 @@
+mat-card {
+    background-color: var(--light);
+
+    width: 100%;
+    color: var(--dark);
+
+    h4 {
+        margin-bottom: 0px !important;
+    }
+
+    padding: 0;
+
+}
+
+.square {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+
+    h4 {
+        color: var(--white);
+    }
+}
+
+.add-platform {
+    color: var(--white);
+}
+
+.add-platform-container {
+    background-color: var(--primary);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+
+}

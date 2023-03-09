@@ -1,0 +1,21 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="true" [fixedTopGap]="45"
+        [fixedBottomGap]="0">
+        <nav>
+            <ul class="sidenav-btns d-flex justify-content-center  align-items-center flex-column">
+                <li *ngFor="let iconName of iconsNames;let i = index"
+                    [ngClass]="{'selected-tab': selectedIconIndex === i}">
+                    <a (click)="selectIcon(i)">
+                        <img [src]="getIconPath(iconName)">
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <ng-content>
+        </ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>

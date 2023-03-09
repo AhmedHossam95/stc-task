@@ -1,0 +1,14 @@
+<div class="d-flex align-items-center justify-content-between add-platform-container margin-vertical">
+    <p class="no-margin">Platforms</p>
+    <button mat-raised-button color="accent" class="add-platform">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+<mat-card>
+    <div *ngFor="let platform of platforms" class="d-flex align-items-center container">
+        <div class="square d-flex align-items-center justify-content-center">
+            {{platform.letter}}
+        </div>
+        <h4 class="padding-horizontal">{{platform.name}}</h4>
+    </div>
+</mat-card>

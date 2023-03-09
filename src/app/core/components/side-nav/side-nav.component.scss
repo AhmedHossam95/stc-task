@@ -1,0 +1,49 @@
+mat-sidenav {
+
+    width: 60px;
+    background-color: var(--primary);
+}
+
+mat-sidenav-content {
+    padding: 16px;
+    margin-top: 45px;
+}
+
+.sidenav-btns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: 100%;
+        text-align: center;
+        padding-block: 10px;
+        position: relative;
+
+        img {
+            height: 20px;
+        }
+    }
+
+}
+
+.selected-tab {
+    background-color: #37204e;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: var(--danger);
+    }
+}
+
+li:hover:not(.selected-tab) {
+    background-color: var(--danger);
+    cursor: pointer;
+    transform: scale(1.3);
+}

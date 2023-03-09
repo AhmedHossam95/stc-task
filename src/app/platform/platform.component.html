@@ -1,0 +1,28 @@
+<div class="row">
+    <mat-card class="col-2">
+        <h1 class="mat-primary">Dobox</h1>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="mat-primary d-flex  align-items-center">
+                    <div class="square d-flex align-items-center justify-content-center">
+                        {{currentWorkSpace.letter}}
+                    </div>
+                    <p class="padding-inline-start">{{currentWorkSpace.viewValue}}</p>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="d-flex align-items-center margin-vertical workspace" *ngFor="let workspace of workspaces">
+                <div class="square d-flex align-items-center justify-content-center">
+                    {{workspace.letter}}
+                </div>
+                <p class="padding-inline-start">{{workspace.viewValue}}
+                </p>
+            </div>
+        </mat-expansion-panel>
+        <app-platforms-list>
+        </app-platforms-list>
+    </mat-card>
+    <article *ngIf="platform" class="col-10">
+        <app-platform-header-card [platform]="platform"></app-platform-header-card>
+        <router-outlet></router-outlet>
+    </article>
+</div>

@@ -1,0 +1,49 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+
+@include mat.core();
+
+
+:root {
+    --primary: #4F008c;
+    --secondary: #A54EE1;
+    --danger: #FF375E;
+    --warning: #f44336;
+    --yellow: #FFDD40;
+    --success: #00C48C;
+    --cyan: #1BCED8;
+    --silver: #8E9AA0;
+    --dark: #1D252D;
+    --light: #F3F3F3;
+    --white: #fff;
+}
+
+$purple-color: (
+    500: var(--primary),
+    contrast: (500: var(--primary),
+    )
+);
+$moon-accent-color: (
+    500: var(--secondary),
+    contrast: (500: var(--secondary),
+    )
+);
+$coral-color: (
+    500: var(--danger),
+    contrast: (500: var(--danger),
+    )
+);
+
+
+
+
+$doBox-app-primary: mat.define-palette($purple-color);
+$doBox-app-accent: mat.define-palette($moon-accent-color);
+$doBox-app-warn: mat.define-palette($coral-color);
+$doBox-app-theme: mat.define-light-theme((color: (primary: $doBox-app-primary,
+                accent: $doBox-app-accent,
+                warn: $doBox-app-warn,
+            )));
+
+@include mat.all-component-themes($doBox-app-theme);

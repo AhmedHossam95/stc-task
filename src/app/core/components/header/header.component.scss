@@ -1,0 +1,25 @@
+.logo-btn {
+    mat-icon {
+        width: 60px;
+    }
+}
+
+.nav-btns {
+    height: 100%;
+}
+
+.nav-btn {
+    border-radius: unset;
+    border-inline-end: 2px solid var(--light);
+    height: 100%;
+
+
+}
+
+mat-toolbar {
+    border-bottom: 2px solid var(--light);
+    background-color: var(--white);
+    height: 45px;
+    position: fixed;
+    z-index: 99999;
+}

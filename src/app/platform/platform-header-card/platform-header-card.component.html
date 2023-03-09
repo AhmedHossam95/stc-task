@@ -1,0 +1,48 @@
+<mat-card class="main-card">
+    <mat-card-header>
+        <mat-card-title class="d-flex align-items-center justify-content-between">
+            <h1 class="no-margin">
+                {{platform?.name}}
+            </h1>
+            <button mat-mini-fab color="primary" class="margin-inline-start-32 edit-btn">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <p>
+                {{platform?.description}}
+            </p>
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="d-flex justify-content-between">
+        <div mat-tab-nav-bar class="d-flex justify-content-between tabs">
+            <a mat-tab-link *ngFor="let tab of tabs;let i = index" (click)="selectTab(i)"
+                [ngClass]="{'selected-tab': selectedTab===i}">
+                {{tab.label}}</a>
+
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <mat-form-field class="search-form-field" appearance="outline">
+                <input class="search-input" type="tel" matInput placeholder="Search all tasks">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+
+            <div class="imgs-list d-flex padding-inline-end">
+                <div *ngFor="let member of platform?.members;let i = index">
+                    <img [src]="member" *ngIf="i<3" />
+                </div>
+                <div *ngIf="platform?.members?.length>3"
+                    class="members-count d-flex justify-content-center align-items-center">
+                    +{{platform.members.length - 3}}
+                </div>
+            </div>
+            <button mat-raised-button color="primary" class="add-member">
+                Add member
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+    </mat-card-content>
+
+</mat-card>
