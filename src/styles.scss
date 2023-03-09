@@ -1,11 +1,30 @@
+@import url("assets/fonts/stylesheet.css");
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'STCForward-Regular';
+    font-display: auto;
+    src: local('STCForward-Regular'), url('assets/fonts/STCForward-Regular.woff') format('woff')
+}
+
 html,
 body {
     height: 100%;
 }
 
-body {
+*:not(mat-icon) {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: STCForward-Regular !important;
+
+}
+
+
+
+
+
+* {
+    font-family: STCForward;
 }
 
 .mat-success {
